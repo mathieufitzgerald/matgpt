@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatGPT Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+</head>
+<body>
+  <nav id="vertical-navbar">
+    <h2>MatGPT</h2>
+    <ul>
+      <li><button id="my-account"><i class="fas fa-user"></i> My Account</button></li>
+      <li><button id="settings"><i class="fas fa-cog"></i> Settings</button></li>
+      <li><button id="login"><i class="fas fa-sign-in-alt"></i> Login</button></li>
+    </ul>
+  </nav>
+  <div id="welcome">
+    <h1>Welcome to MatGPT</h1>
+    <p>Powered by ChatGPT and Mat :)</p> <!-- Added text under the title -->
+    <button id="new-chat" style="margin-top: 20px;"><i class="fas fa-plus"></i> New Chat</button> <!-- Moved the button down -->
+  </div>
+  <div id="chat-container" style="display: none;">
+    <div id="loading-spinner" style="display: none;">
+      <div class="spinner"></div>
+      <p>Please wait...</p> <!-- Added "Please wait..." text -->
+    </div>
+    <div id="chat-area" style="display: none;"></div>
+    <div class="input-bar" style="display: none;">
+      <input type="text" id="user-input" placeholder="Type your question...">
+      <button id="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+    </div>
+  </div>
+  <script src="api_key.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
